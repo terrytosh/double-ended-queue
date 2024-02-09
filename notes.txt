@@ -1,0 +1,32 @@
+A double-ended queue (deque) is a data structure that supports insertion 
+and deletion of elements from both the front and the back. Here's a list 
+of commonly used functions for a deque implementation along with their purposes:
+
+    pushFront(val): Insert an element at the front of the deque.
+
+    pushBack(val): Insert an element at the back of the deque.
+
+    popFront(): Remove and return the element from the front of the deque.
+
+    popBack(): Remove and return the element from the back of the deque.
+
+    front(): Return a reference to the element at the front of the deque without removing it.
+
+    back(): Return a reference to the element at the back of the deque without removing it.
+
+    empty(): Check if the deque is empty.
+
+    size(): Return the number of elements in the deque.
+
+    clear(): Remove all elements from the deque.
+
+    at(index): Access the element at the specified index with bounds checking.
+
+    insert(index, val): Insert an element at the specified index.
+
+    erase(index): Remove the element at the specified index.
+
+These functions provide basic operations for manipulating elements in a double-ended queue. 
+You may choose to implement additional functions based on specific requirements or optimizations. 
+Additionally, you'll need to decide on the underlying data structure to use for the implementation, 
+such as an array-based or linked list-based approach.
