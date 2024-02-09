@@ -14,6 +14,7 @@ Deq::~Deq() {
     std::cout << "Deque successfully destroyed..." << std::endl;
 }
 
+// Print the elements
 void Deq::printDeq() {
     for (int val : deq) {
         std::cout << val << " ";
@@ -21,6 +22,26 @@ void Deq::printDeq() {
     std::cout << std::endl;
 }
 
+// Insert an element at the front
 void Deq::pushFront(int val) {
     deq.push_front(val);
+}
+
+// Insert an element at the back
+void Deq::pushBack(int val) {
+    deq.push_back(val);
+}
+
+// Remove and return the element at the front
+int Deq::popFront() {
+    int output = deq.front();
+    deq.pop_front();
+    return output;
+}
+
+// Remove and return the element at the back
+int Deq::popBack() {
+    int output = deq.back();
+    deq.pop_back();
+    return output;
 }

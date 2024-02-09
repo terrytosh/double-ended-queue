@@ -12,6 +12,9 @@ class Deq {
         ~Deq();
         void printDeq();
         void pushFront(int val);
+        void pushBack(int val);
+        int popFront();
+        int popBack();
 };
 
 #endif /* DEF_H */
